@@ -1,0 +1,2651 @@
+{
+    "70": {
+        "dialogue": [
+            {
+                "question": "Does the bag have the color brown?",
+                "question_type": "verifyAttr",
+                "object_chain": [
+                    [
+                        "[st]",
+                        "[st]",
+                        "1058751"
+                    ]
+                ],
+                "answer_triplets": [
+                    "1058751",
+                    "<attribute>",
+                    "brown"
+                ],
+                "answer": "no",
+                "answer_type": "YN",
+                "image_id": "70",
+                "round": 0,
+                "hallucination_type": null,
+                "prompt": "<obj>: bag; <answer triplet>: bag, <attribute>, brown; <answer>: no; ",
+                "prompt_trimmed": "<obj>: bag; <query>: <attribute>; <answer>: no; ",
+                "last_round_input": null
+            },
+            {
+                "question": "What is the object to the right of the woman and tan in color?",
+                "question_type": "queryObject",
+                "object_chain": [
+                    [
+                        "[st]",
+                        "[st]",
+                        "1058748"
+                    ],
+                    [
+                        "1058748",
+                        "to the left of",
+                        "1058730"
+                    ],
+                    [
+                        "1058730",
+                        "to the right of",
+                        "1058751"
+                    ],
+                    [
+                        "1058751",
+                        "<attribute>",
+                        "tan"
+                    ]
+                ],
+                "answer_triplets": [
+                    "1058748",
+                    "<name>",
+                    "box"
+                ],
+                "answer": "box",
+                "answer_type": "obj",
+                "image_id": "70",
+                "round": 1,
+                "hallucination_type": null,
+                "prompt": "<obj>: box; box, to the left of, woman; woman, to the right of, bag; bag, <attribute>, tan; <answer triplet>: box, <name>, box; <answer>: box; ",
+                "prompt_trimmed": "<obj>: box; box, to the left of, woman; woman, to the right of, bag; bag, <attribute>, tan; <query>: <name>; <answer>: box; ",
+                "last_round_input": "1058751"
+            },
+            {
+                "question": "Is the brown bag on top of the newspaper?",
+                "question_type": "verifyRel",
+                "object_chain": [
+                    [
+                        [
+                            "[st]",
+                            "[st]",
+                            "1058751"
+                        ],
+                        [
+                            "1058751",
+                            "<attribute>",
+                            "brown"
+                        ]
+                    ],
+                    [
+                        [
+                            "[st]",
+                            "[st]",
+                            "1058735"
+                        ]
+                    ]
+                ],
+                "answer_triplets": [
+                    "1058751",
+                    "on top of",
+                    "1058735"
+                ],
+                "answer": "unanswerable",
+                "answer_type": "YN",
+                "image_id": "70",
+                "round": 2,
+                "hallucination_type": "modify_attr_none_exist",
+                "prompt": "<obj1>: bag; bag, <attribute>, brown; <obj2>: newspaper; <answer triplet>: bag, on top of, newspaper; <answer>: unanswerable; ",
+                "prompt_trimmed": "<obj1>: bag; bag, <attribute>, brown; <obj2>: newspaper; <query>: on top of; <answer>: unanswerable; ",
+                "last_round_input": null
+            },
+            {
+                "question": "What is the relative position of the papers to it?",
+                "question_type": "queryRel",
+                "object_chain": [
+                    [
+                        [
+                            "[st]",
+                            "[st]",
+                            "1058751"
+                        ]
+                    ],
+                    [
+                        [
+                            "[st]",
+                            "[st]",
+                            "1058759"
+                        ]
+                    ]
+                ],
+                "answer_triplets": [
+                    "1058751",
+                    "to the right of",
+                    "1058759"
+                ],
+                "answer": "unanswerable",
+                "answer_type": "rel",
+                "image_id": "70",
+                "round": 3,
+                "hallucination_type": "none_exist_refer",
+                "prompt": "<obj1>: bag; <obj2>: papers; <answer triplet>: bag, to the right of, papers; <answer>: unanswerable; ",
+                "prompt_trimmed": "<obj1>: bag; <obj2>: papers; <query>: to the right of; <answer>: unanswerable; ",
+                "last_round_input": "1058751"
+            },
+            {
+                "question": "Does the bag have the color brown?",
+                "question_type": "verifyAttr",
+                "object_chain": [
+                    [
+                        "[st]",
+                        "[st]",
+                        "1058751"
+                    ]
+                ],
+                "answer_triplets": [
+                    "1058751",
+                    "<attribute>",
+                    "brown"
+                ],
+                "answer": "yes",
+                "answer_type": "YN",
+                "image_id": "70",
+                "round": 4,
+                "hallucination_type": null,
+                "prompt": "<obj>: bag; <answer triplet>: bag, <attribute>, brown; <answer>: yes; ",
+                "prompt_trimmed": "<obj>: bag; <query>: <attribute>; <answer>: yes; ",
+                "last_round_input": null
+            }
+        ],
+        "edit_information": {
+            "edited_object_id": "1058751",
+            "edited_sg": {
+                "1058739": {
+                    "name": "suitcase",
+                    "h": 20,
+                    "relations": [
+                        {
+                            "object": "1058728",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058751",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058734",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058730",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058743",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058725",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058740",
+                            "name": "on"
+                        }
+                    ],
+                    "w": 26,
+                    "attributes": [],
+                    "y": 227,
+                    "x": 510
+                },
+                "1058738": {
+                    "name": "room",
+                    "h": 445,
+                    "relations": [],
+                    "w": 599,
+                    "attributes": [],
+                    "y": 1,
+                    "x": 0
+                },
+                "1058731": {
+                    "name": "shirt",
+                    "h": 39,
+                    "relations": [
+                        {
+                            "object": "1058728",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "3786871",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058758",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058757",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058743",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058725",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 29,
+                    "attributes": [],
+                    "y": 164,
+                    "x": 487
+                },
+                "1058730": {
+                    "name": "woman",
+                    "h": 98,
+                    "relations": [
+                        {
+                            "object": "1058757",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058759",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058725",
+                            "name": "by"
+                        },
+                        {
+                            "object": "1058748",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058735",
+                            "name": "reading"
+                        },
+                        {
+                            "object": "1058725",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058743",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058758",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058728",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "3786871",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058751",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058731",
+                            "name": "wearing"
+                        },
+                        {
+                            "object": "1058735",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058739",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058734",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 31,
+                    "attributes": [],
+                    "y": 150,
+                    "x": 486
+                },
+                "3786871": {
+                    "name": "jacket",
+                    "h": 54,
+                    "relations": [
+                        {
+                            "object": "1058730",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058743",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058725",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058748",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058757",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058728",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058758",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058731",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 43,
+                    "attributes": [
+                        "black"
+                    ],
+                    "y": 145,
+                    "x": 448
+                },
+                "1058735": {
+                    "name": "newspaper",
+                    "h": 86,
+                    "relations": [
+                        {
+                            "object": "1058743",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058728",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058730",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058741",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058759",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058751",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058732",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 49,
+                    "attributes": [],
+                    "y": 182,
+                    "x": 296
+                },
+                "1058734": {
+                    "name": "woman",
+                    "h": 111,
+                    "relations": [
+                        {
+                            "object": "1058739",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058728",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058730",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058751",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058727",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058732",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058743",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058741",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058735",
+                            "name": "reading"
+                        },
+                        {
+                            "object": "1058750",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058759",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 101,
+                    "attributes": [],
+                    "y": 183,
+                    "x": 265
+                },
+                "1058727": {
+                    "name": "chair",
+                    "h": 51,
+                    "relations": [
+                        {
+                            "object": "1058750",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058741",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058734",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058742",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058732",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 76,
+                    "attributes": [
+                        "leather"
+                    ],
+                    "y": 244,
+                    "x": 141
+                },
+                "1058742": {
+                    "name": "phone",
+                    "h": 9,
+                    "relations": [
+                        {
+                            "object": "1058727",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058732",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058728",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058740",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058750",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 18,
+                    "attributes": [],
+                    "y": 264,
+                    "x": 273
+                },
+                "1058740": {
+                    "name": "floor",
+                    "h": 193,
+                    "relations": [
+                        {
+                            "object": "1058742",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 201,
+                    "attributes": [],
+                    "y": 251,
+                    "x": 398
+                },
+                "1058741": {
+                    "name": "man",
+                    "h": 121,
+                    "relations": [
+                        {
+                            "object": "1058759",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058734",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058727",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058732",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058735",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058750",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058728",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058751",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 124,
+                    "attributes": [],
+                    "y": 187,
+                    "x": 183
+                },
+                "1058724": {
+                    "name": "painting",
+                    "h": 186,
+                    "relations": [
+                        {
+                            "object": "1058748",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058746",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058725",
+                            "name": "on"
+                        }
+                    ],
+                    "w": 135,
+                    "attributes": [],
+                    "y": 24,
+                    "x": 45
+                },
+                "1058725": {
+                    "name": "wall",
+                    "h": 285,
+                    "relations": [
+                        {
+                            "object": "1058743",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058730",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058731",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058739",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058759",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "3786871",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058728",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058751",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 368,
+                    "attributes": [],
+                    "y": 0,
+                    "x": 0
+                },
+                "1058746": {
+                    "name": "picture",
+                    "h": 149,
+                    "relations": [
+                        {
+                            "object": "1058728",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058748",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058743",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058724",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058757",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058758",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 52,
+                    "attributes": [],
+                    "y": 58,
+                    "x": 240
+                },
+                "1058748": {
+                    "name": "box",
+                    "h": 44,
+                    "relations": [
+                        {
+                            "object": "1058725",
+                            "name": "on"
+                        },
+                        {
+                            "object": "1058746",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058728",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "3786871",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058730",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058724",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058743",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058757",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 26,
+                    "attributes": [
+                        "white"
+                    ],
+                    "y": 141,
+                    "x": 317
+                },
+                "1058743": {
+                    "name": "man",
+                    "h": 119,
+                    "relations": [
+                        {
+                            "object": "1058725",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058751",
+                            "name": "holding"
+                        },
+                        {
+                            "object": "1058739",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058730",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058731",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058734",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058735",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058746",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058748",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058728",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "3786871",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058751",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058757",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058759",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058758",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 37,
+                    "attributes": [],
+                    "y": 129,
+                    "x": 366
+                },
+                "1058728": {
+                    "name": "man",
+                    "h": 155,
+                    "relations": [
+                        {
+                            "object": "1058731",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058742",
+                            "name": "sitting on"
+                        },
+                        {
+                            "object": "1058743",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058725",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058734",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058735",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058730",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058759",
+                            "name": "holding"
+                        },
+                        {
+                            "object": "1058742",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058746",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "3786871",
+                            "name": "wearing"
+                        },
+                        {
+                            "object": "3786871",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058748",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058751",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058739",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058741",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058758",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058757",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 42,
+                    "attributes": [],
+                    "y": 121,
+                    "x": 403
+                },
+                "1058732": {
+                    "name": "woman",
+                    "h": 111,
+                    "relations": [
+                        {
+                            "object": "1058735",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058741",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058742",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058727",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058734",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 116,
+                    "attributes": [
+                        "smiling",
+                        "happy"
+                    ],
+                    "y": 210,
+                    "x": 50
+                },
+                "1058751": {
+                    "name": "bag",
+                    "h": 37,
+                    "relations": [
+                        {
+                            "object": "1058739",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058734",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058725",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058730",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058735",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058741",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058743",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058759",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058728",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 18,
+                    "attributes": [
+                        "tan"
+                    ],
+                    "y": 202,
+                    "x": 444
+                },
+                "1058750": {
+                    "name": "jacket",
+                    "h": 66,
+                    "relations": [
+                        {
+                            "object": "1058741",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058742",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058727",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058734",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 115,
+                    "attributes": [
+                        "yellow"
+                    ],
+                    "y": 255,
+                    "x": 53
+                },
+                "1058757": {
+                    "name": "fire",
+                    "h": 12,
+                    "relations": [
+                        {
+                            "object": "1058758",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058731",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058730",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058743",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058746",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058748",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058728",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "3786871",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 10,
+                    "attributes": [],
+                    "y": 167,
+                    "x": 349
+                },
+                "1058756": {
+                    "name": "chairs",
+                    "h": 163,
+                    "relations": [],
+                    "w": 529,
+                    "attributes": [],
+                    "y": 282,
+                    "x": 65
+                },
+                "1058759": {
+                    "name": "papers",
+                    "h": 30,
+                    "relations": [
+                        {
+                            "object": "1058743",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058741",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058735",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058730",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058725",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058734",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058751",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 25,
+                    "attributes": [],
+                    "y": 204,
+                    "x": 422
+                },
+                "1058758": {
+                    "name": "glass",
+                    "h": 35,
+                    "relations": [
+                        {
+                            "object": "1058728",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "3786871",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058746",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1058743",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058730",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058731",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1058757",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 6,
+                    "attributes": [],
+                    "y": 149,
+                    "x": 334
+                }
+            },
+            "edit_type": "modify_attr",
+            "edit_params": [
+                "1058751",
+                "brown",
+                "tan"
+            ]
+        }
+    },
+    "438": {
+        "dialogue": [
+            {
+                "question": "Is there a sign?",
+                "question_type": "exist",
+                "object_chain": [
+                    [
+                        "[st]",
+                        "[st]",
+                        "1027578"
+                    ]
+                ],
+                "answer_triplets": [
+                    "1027578",
+                    "<name>",
+                    "sign"
+                ],
+                "answer": "no",
+                "answer_type": "YN",
+                "image_id": "438",
+                "round": 0,
+                "hallucination_type": null,
+                "prompt": "<obj>: <no_exist>; <answer triplet>: <no_exist>, <name>, sign; <answer>: no; ",
+                "prompt_trimmed": "<obj>: <no_exist>; <query>: <name>; <answer>: no; ",
+                "last_round_input": null
+            },
+            {
+                "question": "Is the post to the left of the pipe?",
+                "question_type": "verifyRel",
+                "object_chain": [
+                    [
+                        [
+                            "[st]",
+                            "[st]",
+                            "1027602"
+                        ]
+                    ],
+                    [
+                        [
+                            "[st]",
+                            "[st]",
+                            "1027600"
+                        ]
+                    ]
+                ],
+                "answer_triplets": [
+                    "1027602",
+                    "to the left of",
+                    "1027600"
+                ],
+                "answer": "yes",
+                "answer_type": "YN",
+                "image_id": "438",
+                "round": 1,
+                "hallucination_type": null,
+                "prompt": "<obj1>: post; <obj2>: pipe; <answer triplet>: post, to the left of, pipe; <answer>: yes; ",
+                "prompt_trimmed": "<obj1>: post; <obj2>: pipe; <query>: to the left of; <answer>: yes; ",
+                "last_round_input": null
+            },
+            {
+                "question": "What is the attribute of the red street lights?",
+                "question_type": "queryAttr",
+                "object_chain": [
+                    [
+                        "[st]",
+                        "[st]",
+                        "stone"
+                    ],
+                    [
+                        "1027574",
+                        "to the right of",
+                        "1027594"
+                    ],
+                    [
+                        "1027594",
+                        "<attribute>",
+                        "red"
+                    ]
+                ],
+                "answer_triplets": [
+                    "red",
+                    "<attribute>",
+                    "large"
+                ],
+                "answer": "unanswerable",
+                "answer_type": "attr",
+                "image_id": "438",
+                "round": 2,
+                "hallucination_type": "none_exist",
+                "prompt": "<obj>: stone; tree, to the right of, street lights; street lights, <attribute>, red; <answer triplet>: red, <attribute>, large; <answer>: unanswerable; ",
+                "prompt_trimmed": "<obj>: stone; tree, to the right of, street lights; street lights, <attribute>, red; <query>: <attribute>; <answer>: unanswerable; ",
+                "last_round_input": null
+            },
+            {
+                "question": "What is the relative position of it to the tree?",
+                "question_type": "queryRel",
+                "object_chain": [
+                    [
+                        [
+                            "[st]",
+                            "[st]",
+                            "1027594"
+                        ]
+                    ],
+                    [
+                        [
+                            "[st]",
+                            "[st]",
+                            "1027574"
+                        ]
+                    ]
+                ],
+                "answer_triplets": [
+                    "1027594",
+                    "to the left of",
+                    "1027574"
+                ],
+                "answer": "unanswerable",
+                "answer_type": "rel",
+                "image_id": "438",
+                "round": 3,
+                "hallucination_type": "none_exist_refer",
+                "prompt": "<obj1>: street lights; <obj2>: tree; <answer triplet>: street lights, to the left of, tree; <answer>: unanswerable; ",
+                "prompt_trimmed": "<obj1>: street lights; <obj2>: tree; <query>: to the left of; <answer>: unanswerable; ",
+                "last_round_input": "1027594"
+            },
+            {
+                "question": "Is there a sign?",
+                "question_type": "exist",
+                "object_chain": [
+                    [
+                        "[st]",
+                        "[st]",
+                        "1027578"
+                    ]
+                ],
+                "answer_triplets": [
+                    "1027578",
+                    "<name>",
+                    "sign"
+                ],
+                "answer": "yes",
+                "answer_type": "YN",
+                "image_id": "438",
+                "round": 4,
+                "hallucination_type": null,
+                "prompt": "<obj>: sign; <answer triplet>: sign, <name>, sign; <answer>: yes; ",
+                "prompt_trimmed": "<obj>: sign; <query>: <name>; <answer>: yes; ",
+                "last_round_input": null
+            }
+        ],
+        "edit_information": {
+            "edited_object_id": "1027578",
+            "edited_sg": {
+                "1027602": {
+                    "name": "post",
+                    "h": 362,
+                    "relations": [
+                        {
+                            "object": "1027587",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027583",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027600",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 39,
+                    "attributes": [],
+                    "y": 71,
+                    "x": 52
+                },
+                "1027601": {
+                    "name": "trunk",
+                    "h": 312,
+                    "relations": [
+                        {
+                            "object": "1027588",
+                            "name": "near"
+                        },
+                        {
+                            "object": "1027576",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027588",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027583",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027595",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027596",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027594",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027577",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027572",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 104,
+                    "attributes": [],
+                    "y": 155,
+                    "x": 496
+                },
+                "1027600": {
+                    "name": "pipe",
+                    "h": 34,
+                    "relations": [
+                        {
+                            "object": "1027577",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027579",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027584",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027595",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027602",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 41,
+                    "attributes": [],
+                    "y": 309,
+                    "x": 222
+                },
+                "1027572": {
+                    "name": "car",
+                    "h": 117,
+                    "relations": [
+                        {
+                            "object": "1027591",
+                            "name": "on"
+                        },
+                        {
+                            "object": "1027583",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027577",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027574",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027588",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027601",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 149,
+                    "attributes": [
+                        "small",
+                        "bright",
+                        "parked",
+                        "yellow"
+                    ],
+                    "y": 230,
+                    "x": 579
+                },
+                "1027574": {
+                    "name": "tree",
+                    "h": 462,
+                    "relations": [
+                        {
+                            "object": "1027572",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027594",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027595",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027577",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027576",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027583",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027588",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027586",
+                            "name": "on"
+                        }
+                    ],
+                    "w": 130,
+                    "attributes": [
+                        "large"
+                    ],
+                    "y": 0,
+                    "x": 498
+                },
+                "1027577": {
+                    "name": "car",
+                    "h": 105,
+                    "relations": [
+                        {
+                            "object": "1027596",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027594",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027572",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027574",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027583",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027584",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027600",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027601",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 107,
+                    "attributes": [
+                        "blue",
+                        "parked"
+                    ],
+                    "y": 234,
+                    "x": 410
+                },
+                "1027576": {
+                    "name": "helmet",
+                    "h": 37,
+                    "relations": [
+                        {
+                            "object": "1027601",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027574",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027595",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027592",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 45,
+                    "attributes": [
+                        "gold"
+                    ],
+                    "y": 353,
+                    "x": 439
+                },
+                "1027579": {
+                    "name": "pole",
+                    "h": 414,
+                    "relations": [
+                        {
+                            "object": "1027587",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027583",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027600",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 42,
+                    "attributes": [
+                        "black"
+                    ],
+                    "y": 20,
+                    "x": 52
+                },
+                "1027581": {
+                    "name": "bus stop",
+                    "h": 122,
+                    "relations": [],
+                    "w": 800,
+                    "attributes": [],
+                    "y": 228,
+                    "x": 0
+                },
+                "1027583": {
+                    "name": "car",
+                    "h": 82,
+                    "relations": [
+                        {
+                            "object": "1027591",
+                            "name": "on"
+                        },
+                        {
+                            "object": "1027584",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027585",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027577",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027579",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027574",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027601",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027572",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027602",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027596",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 256,
+                    "attributes": [
+                        "blue",
+                        "parked"
+                    ],
+                    "y": 242,
+                    "x": 165
+                },
+                "1027584": {
+                    "name": "car",
+                    "h": 88,
+                    "relations": [
+                        {
+                            "object": "1027591",
+                            "name": "on"
+                        },
+                        {
+                            "object": "1027600",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027583",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027577",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027594",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027585",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 159,
+                    "attributes": [
+                        "gray",
+                        "parked"
+                    ],
+                    "y": 244,
+                    "x": 54
+                },
+                "1027585": {
+                    "name": "car",
+                    "h": 81,
+                    "relations": [
+                        {
+                            "object": "1027583",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027584",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 96,
+                    "attributes": [
+                        "silver",
+                        "parked"
+                    ],
+                    "y": 241,
+                    "x": 0
+                },
+                "1027586": {
+                    "name": "sidewalk",
+                    "h": 217,
+                    "relations": [],
+                    "w": 798,
+                    "attributes": [],
+                    "y": 381,
+                    "x": 1
+                },
+                "1027587": {
+                    "name": "building",
+                    "h": 263,
+                    "relations": [
+                        {
+                            "object": "1027579",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027602",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 532,
+                    "attributes": [],
+                    "y": 0,
+                    "x": 265
+                },
+                "1027588": {
+                    "name": "parking meter",
+                    "h": 225,
+                    "relations": [
+                        {
+                            "object": "1027601",
+                            "name": "next to"
+                        },
+                        {
+                            "object": "1027596",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027601",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027574",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027592",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027572",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027586",
+                            "name": "on"
+                        }
+                    ],
+                    "w": 71,
+                    "attributes": [],
+                    "y": 186,
+                    "x": 720
+                },
+                "1027592": {
+                    "name": "paint",
+                    "h": 86,
+                    "relations": [
+                        {
+                            "object": "1027576",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027588",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 22,
+                    "attributes": [
+                        "black"
+                    ],
+                    "y": 350,
+                    "x": 520
+                },
+                "1027591": {
+                    "name": "street",
+                    "h": 113,
+                    "relations": [],
+                    "w": 798,
+                    "attributes": [],
+                    "y": 330,
+                    "x": 0
+                },
+                "1027596": {
+                    "name": "license plate",
+                    "h": 12,
+                    "relations": [
+                        {
+                            "object": "1027601",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027577",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027583",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027588",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 32,
+                    "attributes": [],
+                    "y": 286,
+                    "x": 594
+                },
+                "1027595": {
+                    "name": "windshield",
+                    "h": 60,
+                    "relations": [
+                        {
+                            "object": "1027574",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027576",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027601",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027600",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 20,
+                    "attributes": [],
+                    "y": 323,
+                    "x": 302
+                },
+                "1027594": {
+                    "name": "street lights",
+                    "h": 47,
+                    "relations": [
+                        {
+                            "object": "1027584",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "1027577",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027574",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "1027601",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 10,
+                    "attributes": [
+                        "red"
+                    ],
+                    "y": 244,
+                    "x": 297
+                },
+                "1027598": {
+                    "name": "leaves",
+                    "h": 18,
+                    "relations": [
+                        {
+                            "object": "1027586",
+                            "name": "on"
+                        }
+                    ],
+                    "w": 27,
+                    "attributes": [],
+                    "y": 465,
+                    "x": 73
+                }
+            },
+            "edit_type": "remove",
+            "edit_params": "1027578"
+        }
+    },
+    "4596": {
+        "dialogue": [
+            {
+                "question": "Is there a cat on the road?",
+                "question_type": "queryObject",
+                "object_chain": [
+                    [
+                        "[st]",
+                        "[st]",
+                        "4376059"
+                    ],
+                    [
+                        "4376059",
+                        "on",
+                        "4376036"
+                    ]
+                ],
+                "answer_triplets": [
+                    "4376059",
+                    "<name>",
+                    "car"
+                ],
+                "answer": "cat",
+                "answer_type": "obj",
+                "image_id": "4596",
+                "round": 0,
+                "hallucination_type": null,
+                "prompt": "<obj>: cat; cat, on, road; <answer triplet>: cat, <name>, car; <answer>: cat; ",
+                "prompt_trimmed": "<obj>: cat; cat, on, road; <query>: <name>; <answer>: cat; ",
+                "last_round_input": null
+            },
+            {
+                "question": "Is it in front of the house?",
+                "question_type": "verifyRel",
+                "object_chain": [
+                    [
+                        [
+                            "[st]",
+                            "[st]",
+                            "4376036"
+                        ]
+                    ],
+                    [
+                        [
+                            "[st]",
+                            "[st]",
+                            "4376048"
+                        ]
+                    ]
+                ],
+                "answer_triplets": [
+                    "4376036",
+                    "in front of",
+                    "4376048"
+                ],
+                "answer": "yes",
+                "answer_type": "YN",
+                "image_id": "4596",
+                "round": 1,
+                "hallucination_type": null,
+                "prompt": "<obj1>: road; <obj2>: house; <answer triplet>: road, in front of, house; <answer>: yes; ",
+                "prompt_trimmed": "<obj1>: road; <obj2>: house; <query>: in front of; <answer>: yes; ",
+                "last_round_input": "4376036"
+            },
+            {
+                "question": "What is the color of the cat?",
+                "question_type": "queryAttr",
+                "object_chain": [
+                    [
+                        "[st]",
+                        "[st]",
+                        "cat"
+                    ]
+                ],
+                "answer_triplets": [
+                    "cat",
+                    "<attribute>",
+                    "red"
+                ],
+                "answer": "unanswerable",
+                "answer_type": "attr",
+                "image_id": "4596",
+                "round": 2,
+                "hallucination_type": "none_exist",
+                "prompt": "<obj>: cat; <answer triplet>: cat, <attribute>, red; <answer>: unanswerable; ",
+                "prompt_trimmed": "<obj>: cat; <query>: <attribute>; <answer>: unanswerable; ",
+                "last_round_input": null
+            },
+            {
+                "question": "Is the car the same color as it?",
+                "question_type": "verifyTargetAttr",
+                "object_chain": [
+                    [
+                        "[st]",
+                        "[st]",
+                        "4376080"
+                    ]
+                ],
+                "answer_triplets": [
+                    "4376080",
+                    "<attribute>",
+                    "red"
+                ],
+                "answer": "unanswerable",
+                "answer_type": "YN",
+                "image_id": "4596",
+                "round": 3,
+                "hallucination_type": "none_exist_refer",
+                "prompt": "<obj>: car; <answer triplet>: car, <attribute>, red; <answer>: unanswerable; ",
+                "prompt_trimmed": "<obj>: car; <query>: <attribute>; <answer>: unanswerable; ",
+                "last_round_input": "red"
+            },
+            {
+                "question": "What is the name of the object that is to the left of the white house?",
+                "question_type": "queryObject",
+                "object_chain": [
+                    [
+                        "[st]",
+                        "[st]",
+                        "4376059"
+                    ],
+                    [
+                        "4376059",
+                        "to the left of",
+                        "4376048"
+                    ],
+                    [
+                        "4376048",
+                        "<attribute>",
+                        "white"
+                    ]
+                ],
+                "answer_triplets": [
+                    "4376059",
+                    "<name>",
+                    "car"
+                ],
+                "answer": "car",
+                "answer_type": "obj",
+                "image_id": "4596",
+                "round": 4,
+                "hallucination_type": null,
+                "prompt": "<obj>: car; car, to the left of, house; house, <attribute>, white; <answer triplet>: car, <name>, car; <answer>: car; ",
+                "prompt_trimmed": "<obj>: car; car, to the left of, house; house, <attribute>, white; <query>: <name>; <answer>: car; ",
+                "last_round_input": null
+            }
+        ],
+        "edit_information": {
+            "edited_object_id": "4376059",
+            "edited_sg": {
+                "4376036": {
+                    "name": "road",
+                    "h": 278,
+                    "relations": [
+                        {
+                            "object": "4376048",
+                            "name": "in front of"
+                        },
+                        {
+                            "object": "4376082",
+                            "name": "near"
+                        }
+                    ],
+                    "w": 800,
+                    "attributes": [],
+                    "y": 321,
+                    "x": 0
+                },
+                "4376051": {
+                    "name": "wall",
+                    "h": 80,
+                    "relations": [
+                        {
+                            "object": "4376070",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376059",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376090",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376080",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376082",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376105",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4630129",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 119,
+                    "attributes": [],
+                    "y": 265,
+                    "x": 442
+                },
+                "4376041": {
+                    "name": "wall",
+                    "h": 211,
+                    "relations": [
+                        {
+                            "object": "4376075",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376059",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 187,
+                    "attributes": [
+                        "concrete"
+                    ],
+                    "y": 311,
+                    "x": 0
+                },
+                "4376105": {
+                    "name": "window",
+                    "h": 11,
+                    "relations": [
+                        {
+                            "object": "4376088",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376090",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376070",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376059",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376050",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376051",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376082",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4630275",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 8,
+                    "attributes": [],
+                    "y": 263,
+                    "x": 582
+                },
+                "4630275": {
+                    "name": "trees",
+                    "h": 72,
+                    "relations": [
+                        {
+                            "object": "4376048",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376080",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376082",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376059",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376090",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4630129",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376070",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376105",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376050",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 47,
+                    "attributes": [
+                        "green"
+                    ],
+                    "y": 241,
+                    "x": 481
+                },
+                "4376082": {
+                    "name": "wall",
+                    "h": 335,
+                    "relations": [
+                        {
+                            "object": "4376036",
+                            "name": "next to"
+                        },
+                        {
+                            "object": "4376036",
+                            "name": "near"
+                        },
+                        {
+                            "object": "4376080",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4630275",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376051",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376048",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376105",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376090",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376088",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 88,
+                    "attributes": [
+                        "brick"
+                    ],
+                    "y": 152,
+                    "x": 711
+                },
+                "4376092": {
+                    "name": "plants",
+                    "h": 248,
+                    "relations": [
+                        {
+                            "object": "4630129",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376039",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376037",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 102,
+                    "attributes": [
+                        "green"
+                    ],
+                    "y": 93,
+                    "x": 0
+                },
+                "4376080": {
+                    "name": "car",
+                    "h": 23,
+                    "relations": [
+                        {
+                            "object": "4376088",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376082",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376070",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376059",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4630275",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376051",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 43,
+                    "attributes": [
+                        "red"
+                    ],
+                    "y": 300,
+                    "x": 575
+                },
+                "4376059": {
+                    "name": "cat",
+                    "h": 231,
+                    "relations": [
+                        {
+                            "object": "4376090",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376051",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376036",
+                            "name": "parked in"
+                        },
+                        {
+                            "object": "4376080",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376050",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4630275",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376041",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376105",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376048",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376036",
+                            "name": "on"
+                        }
+                    ],
+                    "w": 336,
+                    "attributes": [
+                        "gray"
+                    ],
+                    "y": 248,
+                    "x": 116
+                },
+                "4376070": {
+                    "name": "window",
+                    "h": 80,
+                    "relations": [
+                        {
+                            "object": "4630275",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376050",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376088",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376080",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376051",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4630129",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376105",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376048",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 79,
+                    "attributes": [],
+                    "y": 259,
+                    "x": 347
+                },
+                "4630276": {
+                    "name": "roadside",
+                    "h": 208,
+                    "relations": [],
+                    "w": 114,
+                    "attributes": [],
+                    "y": 313,
+                    "x": 686
+                },
+                "4376076": {
+                    "name": "tire",
+                    "h": 66,
+                    "relations": [],
+                    "w": 34,
+                    "attributes": [
+                        "black"
+                    ],
+                    "y": 346,
+                    "x": 414
+                },
+                "4376088": {
+                    "name": "telephone pole",
+                    "h": 216,
+                    "relations": [
+                        {
+                            "object": "4376048",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376082",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376080",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376090",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376070",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4630129",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376050",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376105",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 16,
+                    "attributes": [],
+                    "y": 105,
+                    "x": 516
+                },
+                "4630129": {
+                    "name": "window",
+                    "h": 76,
+                    "relations": [
+                        {
+                            "object": "4376088",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376070",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376051",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376092",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376050",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4630275",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 192,
+                    "attributes": [],
+                    "y": 262,
+                    "x": 170
+                },
+                "4376037": {
+                    "name": "leaves",
+                    "h": 13,
+                    "relations": [
+                        {
+                            "object": "4376092",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 12,
+                    "attributes": [
+                        "green"
+                    ],
+                    "y": 176,
+                    "x": 171
+                },
+                "4376048": {
+                    "name": "house",
+                    "h": 56,
+                    "relations": [
+                        {
+                            "object": "4376082",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376088",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376059",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376070",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376050",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4630275",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 81,
+                    "attributes": [
+                        "white"
+                    ],
+                    "y": 235,
+                    "x": 578
+                },
+                "4376047": {
+                    "name": "wires",
+                    "h": 153,
+                    "relations": [],
+                    "w": 160,
+                    "attributes": [
+                        "wood"
+                    ],
+                    "y": 0,
+                    "x": 405
+                },
+                "4376075": {
+                    "name": "tire",
+                    "h": 88,
+                    "relations": [
+                        {
+                            "object": "4376041",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 50,
+                    "attributes": [
+                        "black"
+                    ],
+                    "y": 388,
+                    "x": 318
+                },
+                "4376090": {
+                    "name": "window",
+                    "h": 9,
+                    "relations": [
+                        {
+                            "object": "4376051",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376059",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376088",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376082",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376105",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4630275",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376050",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 11,
+                    "attributes": [],
+                    "y": 264,
+                    "x": 627
+                },
+                "4376039": {
+                    "name": "leaves",
+                    "h": 13,
+                    "relations": [
+                        {
+                            "object": "4376092",
+                            "name": "to the right of"
+                        }
+                    ],
+                    "w": 12,
+                    "attributes": [],
+                    "y": 159,
+                    "x": 277
+                },
+                "4376050": {
+                    "name": "trees",
+                    "h": 81,
+                    "relations": [
+                        {
+                            "object": "4376048",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4630275",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376105",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376070",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4630129",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376090",
+                            "name": "to the left of"
+                        },
+                        {
+                            "object": "4376059",
+                            "name": "to the right of"
+                        },
+                        {
+                            "object": "4376088",
+                            "name": "to the left of"
+                        }
+                    ],
+                    "w": 52,
+                    "attributes": [],
+                    "y": 229,
+                    "x": 443
+                }
+            },
+            "edit_type": "modify_obj",
+            "edit_params": [
+                "4376059",
+                "2354070",
+                "841218"
+            ]
+        }
+    }
+}
